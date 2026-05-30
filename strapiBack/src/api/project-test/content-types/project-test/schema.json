@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_tests",
+  "info": {
+    "singularName": "project-test",
+    "pluralName": "project-tests",
+    "displayName": "ProjectTest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tech_stack": {
+      "type": "string"
+    },
+    "github_url": {
+      "type": "string"
+    },
+    "live_url": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    }
+  }
+}

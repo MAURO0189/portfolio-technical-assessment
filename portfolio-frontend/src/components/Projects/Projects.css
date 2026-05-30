@@ -1,0 +1,76 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition:
+    border-color 0.3s,
+    transform 0.3s;
+  position: relative;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.featured-badge {
+  font-size: 0.75rem;
+  color: var(--accent-2);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.project-desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  flex: 1;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: rgba(124, 58, 237, 0.15);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.87rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: var(--accent-2);
+}
